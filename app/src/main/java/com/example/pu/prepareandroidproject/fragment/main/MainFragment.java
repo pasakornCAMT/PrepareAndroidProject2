@@ -35,7 +35,7 @@ public class MainFragment extends Fragment{
         mNames.add("CCC");
 
         mImageUrls.add("https://d1af89beukha9h.cloudfront.net/wp-content/uploads/2017/12/iStock-598223378-256x256.jpg");
-        mNames.add("DDD");
+        mNames.add("FFF");
 
         mImageUrls.add("https://static.wixstatic.com/media/7dd205_b85c839d33ae4b069ba704f32a7e01ba~mv2.jpg_256");
         mNames.add("EEE");

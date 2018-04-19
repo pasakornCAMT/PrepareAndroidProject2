@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ccc">
+
+        <ImageView
+            android:id="@+id/mv_res_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/tv_res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant name"
+            android:textSize="24sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_res_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: xx - xx ฿"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: This restaurant is Awesome!!!"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: xx xx xx xx xx xx xx xx xx xx"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tel: 089-999-9999"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.pu.prepareandroidproject.fragment.main;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.pu.prepareandroidproject.R;
+import com.example.pu.prepareandroidproject.RestaurantInfoActivity;
 
 import java.util.ArrayList;
 
@@ -48,6 +50,10 @@ public class MainRecyclerView extends RecyclerView.Adapter<MainRecyclerView.View
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext,mNames.get(position),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext, RestaurantInfoActivity.class);
+                intent.putExtra("image_url",mImageUrls.get(position));
+                intent.putExtra("image_name",mNames.get(position));
+                //mContext.startActivity(intent);
             }
         });
     }
